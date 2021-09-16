@@ -54,7 +54,7 @@ While submitting the result obtain from the above model in [Data Driven - Pump i
  
 |Model| Accuracy| 
 |:---|:---|
-|**Random Forest**|0.8215|
+|**Random Forest**|0.8227|
 |**XGBoost**|0.8086|
 
 
