@@ -39,7 +39,7 @@ Although 8035 (27%) of the wells have adequate good quality water, they are non-
 
  ## Modelling 
  
-We got good results with Random Forest Classifier with suitable format to three-class target.
+I got good results with Random Forest Classifier with suitable format to three-class target.
 I have used models with Random Forest and XGBoost. 
 I mostly care about balanced accuracy on test set. Because competition metric for success in ternary classification problem is balanced accuracy.
 
