@@ -1,6 +1,6 @@
 # Pump-it-Up-Data-Mining-the-Water-Table
 
-Project git repository [here](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/).
+Project git repository [here](https://github.com/thukaraka/Pump-it-Up-Data-Mining-the-Water-Table).
 
 ## Data Cleaning  
 
