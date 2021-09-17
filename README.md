@@ -60,7 +60,7 @@ First, I go over each column one by one to see what they're about and what they 
 
 *  When I looked at the data distribution, I saw that there are a lot of missing values for the min values of the variables. This refers to the presence of missing values that must be filled in before the models may be used again. I eliminated a couple of them because the aim is unaffected by repeated or similar values, and decreasing the data makes our models quicker to execute. Some of the missing data can be filled up with the mean values.
 
-  ![image](https://user-images.githubusercontent.com/46936272/132957569-f79d9b16-3acc-4df9-a6b0-92a45f0369ec.png)
+   ![image1](https://user-images.githubusercontent.com/47825369/133795127-4feee396-d7cf-441b-8b51-a68150831592.JPG)
 
 * The training set contains 59400 observation records  and 41 columns.The label for each pump is displayed in the column **status group**, while the other 40 variables correspond to the attributes, 10 of which are numerical and the rest are categorical.
 'id', 'amount_tsh', 'gps_height', 'longitude', 'latitude', 'num_private', 'region_code', 'district_code', 'population', 'construction_year' are numeric values others are categorical values.
@@ -81,11 +81,11 @@ First, I go over each column one by one to see what they're about and what they 
 
    * These scheme management and management columns contain nearly identical information. Because "scheme management" refers to who manages the water station, "management" refers to how it is run. I'd rather keep the 'management' column because the 'scheme management' field has 3877 null entries. In the column 'management group,' similar information on how the water point is managed is maintained..
 
-  ![image](https://user-images.githubusercontent.com/46936272/132957580-5390c41d-3eba-4f6d-a6ee-e7c3c2ce26a5.png)
-    
+  ![image2](https://user-images.githubusercontent.com/47825369/133795223-b9440cb3-a9e0-4fcf-95d6-28ba618f395e.JPG) 
+  
    * I checked the 'user-group' values to locate the subgroups of the 'management_ group' column and discovered that this column is simply the grouped version of 'management'. Despite the fact that the 'management' column includes more detailed information, I choose to remove the 'management group' column. I also categorized it below and saw the numbers of sub-groups to recall and check the sub-groups of the 'management_group' column (management column)
     
-  ![image](https://user-images.githubusercontent.com/46936272/132974375-61f64032-3979-4991-90c9-0883fa138711.png)
+  ![image3](https://user-images.githubusercontent.com/47825369/133795316-c30ff2d6-871e-415c-bad3-2679e2577f0b.JPG)
 
 ### quantity / quantity_group columns
 
