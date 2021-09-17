@@ -101,9 +101,9 @@ First, I go over each column one by one to see what they're about and what they 
 
    * It is self-evident that the information in these three columns is identical. As a result, I've opted to maintain only the 'source' column because it has more detailed information, and I'll omit the others.
     
-   ![image](https://user-images.githubusercontent.com/46936272/132957622-3c43a6a2-a097-42ad-8444-7924acf8ca59.png)
-    
-   ![image](https://user-images.githubusercontent.com/46936272/132957654-f51214ee-b145-4abd-8753-69ef5ecfdcc3.png)
+   ![image6](https://user-images.githubusercontent.com/47825369/133801780-a2305af5-c064-4d50-afdf-88e1f8d3c7bb.JPG)
+   
+   ![image7](https://user-images.githubusercontent.com/47825369/133801820-f5f5b249-0a28-4984-82e2-e4929834e933.JPG)
 
    * There is a lot of non-functional ground water when I look at the columns. It's also interesting to note that the functional and non-functional waterpoints for machine dbh and swallow well sources are nearly identical..
     
@@ -111,15 +111,15 @@ First, I go over each column one by one to see what they're about and what they 
         
    * I'll maintain 'water_quality' and drop 'quality_group' because the 'water_quality' column has more unique values.
    
-   ![image](https://user-images.githubusercontent.com/46936272/132957720-6def4cac-0799-4884-adc0-a57b55c15180.png)
-    
+   ![image9](https://user-images.githubusercontent.com/47825369/133802539-804b4f6c-63bb-45b6-a3cc-3c8698692c00.JPG)
+
    * It can be seen from the graph that many non-functional water sites have soft, good water quality.
      
 ### payment / payment_type columns
     
    * Because these two columns are identical, I chose to remove one of them.
     
-   ![image](https://user-images.githubusercontent.com/46936272/132957676-81aec2b7-95db-4249-b0c8-e3937aa25943.png)
+   ![image10](https://user-images.githubusercontent.com/47825369/133802591-74d3888f-777b-46dd-a69f-b2fcbec81f1e.JPG)
 
    * This feature shows us what the water cost. Mostly, there are lots of non-functioal water points as never paid for them. Repair needed pumps are commonly in never paid category.
     
@@ -127,15 +127,15 @@ First, I go over each column one by one to see what they're about and what they 
 
    * It is clear that the information in these three columns is identical. As a result, I choose to keep 'extraction_type_group' and remove the others. Although extraction type has more unique values than extraction type group, according to this large dataset, some of these values are quite small. I prefered to use more compact one. Furthermore, extraction_type_class column contains less information. As a result, extraction_type_group has been chosen to be kept.
     
-   ![image](https://user-images.githubusercontent.com/46936272/132957754-552b4bc8-e30a-41a7-a29f-f36d7dcf3c9d.png)
-    
+   ![extractiontype](https://user-images.githubusercontent.com/47825369/133803627-578dbf98-0a41-427e-8a33-512f071bba73.JPG)
+
    * Other and mono extraction kinds, in particular, have a larger chance of being non-functional than functional..
     
 ### waterpoint_type / waterpoint_type_group columns
 
    * Despite the fact that both have the identical information, I choose to maintain 'waterpoint_type' because it contains more data.
     
-   ![image](https://user-images.githubusercontent.com/46936272/132957872-fa755134-9001-405e-80b9-6f3509c1a06b.png)
+   ![waterpoint](https://user-images.githubusercontent.com/47825369/133803713-628fadc0-4fc2-4151-991f-a286f542f90f.JPG)
 
    * It can be seen that waterpoint type has correlation with functionality of water points. As a result, communal standpipes have a higher chance of being functional, while communal standpipe multiple and others have a higher chance of being non-functional.
     
@@ -145,7 +145,7 @@ First, I go over each column one by one to see what they're about and what they 
    
    ![image](https://user-images.githubusercontent.com/46936272/132955254-60247de8-bb7a-42ab-acff-a009220dee01.png)
     
-   ![image](https://user-images.githubusercontent.com/46936272/132955298-c4e20158-0535-4106-bfc1-1976c1002c2c.png)
+   ![construction year](https://user-images.githubusercontent.com/47825369/133803929-81456050-3f66-4d03-bb30-a35394b3ec4e.JPG)
 
    * It is clear that missing values and that recent years have shown an increase in the number of functional water points.
 
@@ -161,19 +161,19 @@ First, I go over each column one by one to see what they're about and what they 
     
    * It is interesting that most of water points which central government and district council installed are non-functional. DWE has the majority of functional wells but has also many non-functional wells.
    
-   ![image](https://user-images.githubusercontent.com/46936272/132955391-2e6ecef1-8023-4d85-b88b-68a36f55baab.png)
+   ![installer](https://user-images.githubusercontent.com/47825369/133804126-1fb865bd-cd90-4374-ac1c-7ee62f6af0c7.JPG)
 
 ### funder column
 
    * This is a highly categorized column with thousands of possible values. So, for future encoding, I'll use the 20 most common values.
 
-   ![image](https://user-images.githubusercontent.com/46936272/132955434-9a481b6c-7679-43ce-b291-b585f3b55e28.png)
-
+   ![funder](https://user-images.githubusercontent.com/47825369/133804177-f14e5491-4761-4d0b-8d35-5d67d24ccbeb.JPG)
+   
    * From the plots, I realize that most of the water points which funded by government are non-functional.
 
 ### longitude,latitude column
 
-   ![image](https://user-images.githubusercontent.com/46936272/132956803-77e2f3cb-6114-4b63-addc-e4779ffc8103.png)
+   ![long](https://user-images.githubusercontent.com/47825369/133805135-aaecff70-21ce-4fba-b9f0-85373de93959.JPG)
 
    * When the longitude is unknown, it is evident that it is written as 0. Because the zero points in the graph above outliers and outside of Tanzania are plainly seen. As a result, I converted them to mean, where the median is nearly the same number.
 
@@ -183,7 +183,7 @@ First, I go over each column one by one to see what they're about and what they 
 
    ![image](https://user-images.githubusercontent.com/46936272/132956871-58c2fb27-3e13-4192-bad6-1e9ffe49b6ac.png)
 
-   ![image](https://user-images.githubusercontent.com/46936272/132956887-ef366253-bf18-4636-8d74-48be088f5fe5.png)
+   ![region](https://user-images.githubusercontent.com/47825369/133805248-58cc4bfb-8944-4c42-bf13-216770043806.JPG)
 
    * Some areas have a better chance of having a functional water well. Between the basins of Klimanjaro and Arusha is the Pangani basin, which has a higher water point. They also have larger parts for functional wells, as can be seen.
 
@@ -217,7 +217,7 @@ First, I go over each column one by one to see what they're about and what they 
 
 ### basin column
 
-   ![image](https://user-images.githubusercontent.com/46936272/132957038-15fd5ea9-9882-43de-bd6a-673a7039e738.png)
+   ![basin](https://user-images.githubusercontent.com/47825369/133805302-c624a381-5218-40ec-8ecf-413b59e6e892.JPG)
 
    * This column gives an idea about there is correlation between functionality and geographical water basin.
 
@@ -227,14 +227,10 @@ First, I go over each column one by one to see what they're about and what they 
 
 ### district_code column
 
-   ![image](https://user-images.githubusercontent.com/46936272/132997995-6abc2227-45ba-4bf6-ad62-0ed516513d2f.png)
+   ![district code](https://user-images.githubusercontent.com/47825369/133805353-560f35bd-ed40-470a-a44f-1170610e7e42.JPG)
 
    * It includes numeric values about districts. Each district has one number.
-
-   ![image](https://user-images.githubusercontent.com/46936272/132998021-8c0271ad-7c25-45f1-9e30-32f68ee1f5b1.png)
-
-   * It includes numeric values about districts. Each district has one number.
-
+ 
 ### lga / ward columns
 
    * Now I decided to  drop this column. Because, there are also other location features .
@@ -295,31 +291,6 @@ As I mentioned previously, I need to handle similar variables in the dataset to 
 
        - num_private consists of 99% zeros and does not have a clear description, so we cannot interpret it
        - wpt_name is not very informative as it has fewer values than the number of observations
-
-### Ordinal encoding of categorical data
-
-   * This methodology was chosen to prevent having too many columns and to provide the model some logic when analyzing the features. 
-   * For example, the higher the category in the variable quality_group, the better the water quality and the more probable the pump will perform correctly.
-
-#### quality_group
-
-   ![image](https://user-images.githubusercontent.com/46936272/133055948-fe9c59a4-5b0a-45ec-be49-b07eddb2504f.png)
-
-#### quantity_group
-
-   ![image](https://user-images.githubusercontent.com/46936272/133056371-e0996825-99d8-42a5-8323-f148480f6ccd.png)
-
-#### payment_type
-
-   ![image](https://user-images.githubusercontent.com/46936272/133056464-4a41c3c1-af92-4daf-8df7-b79b778debbc.png)
-
-#### public_meeting
-
-   ![image](https://user-images.githubusercontent.com/46936272/133056562-2707d48f-db9f-43ef-973f-b36dec016364.png)
-
-#### permit
-
-   ![image](https://user-images.githubusercontent.com/46936272/133056640-8b7067ca-64ca-4143-b49c-117a04b5d7b7.png)
 
 ### Explorations
 
