@@ -1,5 +1,7 @@
 # Pump-it-Up-Data-Mining-the-Water-Table
 
+Project git repository [here](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/).
+
 ## Data Cleaning  
 
 The data has several null values, missing values, and redundant characteristics columns. This project has two major challenges: cleaning data and dealing with extremely imbalanced target labels.
