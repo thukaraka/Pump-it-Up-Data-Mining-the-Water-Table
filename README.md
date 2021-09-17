@@ -91,7 +91,9 @@ First, I go over each column one by one to see what they're about and what they 
 
    * Because these two columns contain the identical data, I decided to remove the 'quantity_group' column..
     
-   ![image](https://user-images.githubusercontent.com/46936272/132957603-c629a6a8-ba6a-480b-a53f-48c6fe1eef00.png)
+   ![image4](https://user-images.githubusercontent.com/47825369/133799558-e57649d9-9f29-472f-8f8b-5633648703e9.JPG)
+   
+   ![image5](https://user-images.githubusercontent.com/47825369/133799661-3aebc0a6-3cbe-4cf2-902c-d8d7323aca01.JPG)
 
    * It is clear that, despite the presence of sufficient water, some wells are non-functional. Dry quantity water points have a strong correlation with non-functionality in this graph. There's a good likelihood the water point is non-functional if it's dry or unknown. If the quantity is enough, however, there is a better probability of finding functional water points.
     
