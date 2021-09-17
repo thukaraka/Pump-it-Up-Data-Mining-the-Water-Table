@@ -50,7 +50,7 @@ I mostly care about balanced accuracy on test set. Because competition metric fo
 |**Balanced Train accuracy**|0.9178927855359819|0.7930168611874482|
 |**Balanced Test accuracy**|0.6951889733951102|0.6884408871966059|
 
-While submitting the result obtain from the above model in [Data Driven - Pump it up comoetition](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/) I have obtained the following accuracy 
+While submitting the result obtain from the above model in [Data Driven - Pump it up competition](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/) I have obtained the following accuracy 
  
 |Model| Accuracy| 
 |:---|:---|
